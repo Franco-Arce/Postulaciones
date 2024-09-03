@@ -1,0 +1,170 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #3d3d3d;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #e0e0e0;
+}
+
+header .btn {
+    background-color: #6c63ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+header .btn:hover {
+    background-color: #5a5aef;
+}
+
+/* Estilo principal */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-table-container {
+    display: flex;
+    flex-direction: row; /* Mantener los contenedores lado a lado */
+    gap: 20px;
+}
+
+.form-container, .table-container {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.form-container {
+    max-width: 50%; /* Limitar el ancho máximo del contenedor de formulario */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar contenido horizontalmente */
+}
+
+.table-container {
+    max-width: 50%; /* Limitar el ancho máximo del contenedor de tabla */
+    overflow-x: auto;
+}
+
+/* Estilo de los encabezados de la tabla */
+h2 {
+    margin-top: 0;
+}
+
+/* Estilo del formulario */
+form {
+    width: 100%;
+    max-width: 500px; /* Ajustar el ancho máximo del formulario */
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px; /* Reducir el tamaño del padding */
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    margin-bottom: 10px; /* Reducir el espacio entre los campos */
+}
+
+form button {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #5a5aef;
+}
+
+/* Estilo de búsqueda */
+#searchInput {
+    width: 100%;
+    max-width: 400px; /* Ajustar el ancho máximo del campo de búsqueda */
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Espacio debajo del campo de búsqueda */
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    display: block; /* Asegura que el campo ocupe el ancho disponible */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+table th {
+    background-color: #3d3d3d;
+}
+
+table tr:hover {
+    background-color: #333;
+}
+
+table a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+table button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table button:hover {
+    background-color: #c0392b;
+}

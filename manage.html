@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeFlow Postulaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CodeFlow Postulaciones</h1>
+            <a href="index.html" class="btn">Volver al Inicio</a>
+        </header>
+        <main>
+            <div class="form-table-container">
+                <div class="form-container">
+                    <h2>Cargar Nueva Postulación</h2>
+                    <form id="postulationForm">
+                        <label for="companyName">Nombre de la Empresa:</label>
+                        <input type="text" id="companyName" required>
+                        <label for="position">Puesto:</label>
+                        <input type="text" id="position" required>
+                        <label for="link">Enlace:</label>
+                        <input type="url" id="link" required>
+                        <label for="date">Fecha:</label>
+                        <input type="date" id="date" required>
+                        <label for="status">Estado:</label>
+                        <select id="status" required>
+                            <option value="Pendiente">Pendiente</option>
+                            <option value="Aprobada">Aprobada</option>
+                            <option value="Rechazada">Rechazada</option>
+                        </select>
+                        <button type="submit" class="btn">Agregar Postulación</button>
+                    </form>
+                </div>
+                <div class="table-container">
+                    <h2>Listado de Postulaciones</h2>
+                    <input type="text" id="searchInput" placeholder="Buscar por nombre de la empresa...">
+                    <table id="postulationTable">
+                        <thead>
+                            <tr>
+                                <th>Nombre de la Empresa</th>
+                                <th>Puesto</th>
+                                <th>Enlace</th>
+                                <th>Fecha</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Aquí se cargarán las postulaciones -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
